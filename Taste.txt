@@ -1,0 +1,794 @@
+// Reference=MNI
+// Smeets P A M, 2006: Satiation with Chocolate in Men, Activations
+// Subjects=12
+-20	-8	-4
+-16	-2	0
+-35	-6	2
+-34	-16	38
+-14	12	66
+22	32	-4
+-6	26	-4
+34	4	10
+-24	6	8
+-8	-80	20
+-40	-8	36
+-20	-90	16
+
+// Smeets P A M, 2006: Satiation with Chocolate in Women, Activations
+// Subjects=12
+44	-14	48
+56	-2	32
+66	-30	12
+30	-16	-6
+54	-10	8
+-42	-16	48
+
+// Smeets P A M, 2006: Negative Effect of Satiation on Taste Activation in 
+// Women
+// Subjects=12
+-2	-4	-6
+
+// Smeets P A M, 2006: Positive Effect of Satiation on Taste Activation in Men
+// Subjects=12
+-14	-2	-2
+
+// Smeets P A M, 2006: Negative Effect of Satiation on Taste Activation in Men
+// Subjects=12
+6	26	46
+
+// Uher R, 2006: Food > Non-Food
+// Subjects=8
+-40	-63	-14
+33	-52	-17
+29	-74	-7
+33	-56	36
+-36	11	10
+
+// Uher R, 2006: Taste: Chocolate Milk
+// Subjects=8
+-40	-5	30
+18	-59	-13
+-7	15	17
+
+// Uher R, 2006: Taste: Chicken Broth
+// Subjects=8
+18	-4	-7
+7	-4	7
+-33	11	7
+-43	-19	17
+-36	41	20
+-47	7	30
+-47	-44	36
+40	-15	43
+
+// Uher R, 2006: Taste: Both, Fasting vs. Satiation
+// Subjects=8
+-40	15	13
+
+// Uher R, 2006: Taste: Chocolate, Fasting vs. Satiation
+// Subjects=8
+47	11	17
+
+// Uher R, 2006: Taste: Chicken, Fasting vs. Satiation
+// Subjects=8
+-43	-15	30
+7	22	50
+
+// Zald D H, 2002: QHCL > Water
+// Subjects=9
+-24	50	-11
+-18	-10	-14
+-17	-15	43
+26	26	-18
+8	1	-11
+39	-17	-20
+-3	-58	-27
+
+// Zald D H, 2002: QHCL > Sucrose
+// Subjects=9
+19	35	-20
+-15	-49	-14
+-24	44	-16
+-24	55	-11
+-19	-67	-16
+19	-6	-27
+-30	-69	-22
+
+// Zald D H, 2002: Sucrose > QHCL
+// Subjects=9
+-39	-37	36
+-33	-33	4
+6	-24	-27
+-35	-6	-27
+-33	-8	-22
+
+// de Araujo I E T, 2003: MSGIMP + MSG + IMP vs. Tasteless Solution
+// Subjects=10
+54	12	10
+-58	18	2
+-34	26	-6
+-4	30	36
+52	12	10
+
+// de Araujo I E T, 2003: MSGIMP vs. MSG + IMP
+// Subjects=10
+-44	34	-18
+
+// de Araujo I E T, 2003: Sucrose + Strawberry - Tasteless Solution
+// Subjects=11
+14	26	-6
+42	18	-6
+-31	22	0
+64	-4	20
+64	14	16
+8	8	-10
+-18	-2	-24
+20	-4	-24
+8	11	49
+-42	28	20
+-32	50	-10
+
+// de Araujo I E T, 2003: Sucrose - Tasteless Solution
+// Subjects=11
+10	22	-12
+45	15	-9
+64	-4	20
+-62	-10	14
+8	8	-12
+-18	0	-26
+20	-4	-24
+6	6	50
+
+// de Araujo I E, 2003: Water - Tasteless
+// Subjects=11
+37	22	3
+-33	22	3
+-60	-2	18
+-1	35	-16
+9	19	-16
+1	24	39
+37	6	-4
+
+// de Araujo I E, 2003: Water AND Salt AND Glucose
+// Subjects=11
+39	24	4
+2	30	-18
+2	40	16
+-2	32	37
+
+// de Araujo I E, 2003: Water - Tasteless, Pre- vs. Post-Satiety
+// Subjects=11
+40	20	0
+-40	20	0
+
+// Zald D H, 1998: Saline Solution vs. Pure Distilled Water
+// Subjects=9
+1	-22	9
+26	1	-16
+-1	39	0
+3	10	40
+-6	-22	36
+-3	30	0
+-24	41	-7
+26	-15	-20
+
+// Zald D H, 1998: Saline Solution vs. Chocolate
+// Subjects=9
+-1	32	0
+57	-15	38
+33	14	7
+46	-15	34
+-21	39	-7
+26	-8	-18
+
+// Berns G S, 2001: Preferred > Non-Preferred
+// Subjects=25
+-60	-12	16
+
+// Rolls E T, 2007: Chocolate in Mouth 
+// Subjects=8
+-30	12	0
+32	22	0
+-4	24	38
+-20	42	-4
+-12	6	4
+-30	44	26
+
+// Castriota-Scanderbeg A, 2005: Wine - Glucose, Controls
+// Subjects=7
+52	10	2
+58	18	2
+44	24	-6
+28	64	14
+-50	36	6
+-22	-8	-18
+
+// Castriota-Scanderbeg A, 2005: Wine - Glucose, Sommeliers
+// Subjects=7
+58	0	6
+62	16	14
+-34	12	-6
+-32	28	-4
+46	48	12
+-34	40	32
+-46	40	2
+-28	0	2
+
+// Schoenfeld M A, 2004: Sweet vs. All Others
+// Subjects=6
+54	8	4
+34	10	-24
+
+// Schoenfeld M A, 2004: Umami vs. All Others
+// Subjects=6
+42	14	-16
+40	18	6
+
+// Schoenfeld M A, 2004: Salt vs. All Others
+// Subjects=6
+48	8	-12
+32	14	-16
+
+// Schoenfeld M A, 2004: Sour vs. All Others
+// Subjects=6
+38	14	-16
+
+// Schoenfeld M A, 2004: Bitter vs. All Others
+// Subjects=6
+48	16	-10
+
+// Haase L, 2007: Sucrose - Water
+// Subjects=18
+-53	-11	20
+-53	-8	22
+-32	15	6
+-33	-7	15
+-53	-13	14
+-31	15	12
+-41	32	11
+-8	-15	9
+-24	40	-11
+-29	36	-7
+-41	11	13
+-34	10	-6
+-58	-8	16
+-53	11	12
+-13	-17	8
+-6	-16	8
+-5	46	7
+58	-5	22
+39	-11	16
+58	-5	22
+38	19	4
+38	23	1
+12	13	6
+33	36	-4
+32	38	-7
+40	7	-8
+35	-5	12
+62	-9	18
+12	-17	8
+11	-18	8
+11	39	17
+
+// Haase L, 2007: Caffeine - Water
+// Subjects=18
+37	-24	-11
+29	-25	18
+32	-26	-13
+31	-38	1
+28	-7	-15
+2	34	6
+-19	-12	-16
+-19	-7	-17
+-54	-13	16
+
+// Francis S T, 1999: Pleasant Taste
+// Subjects=6
+6	18	-12
+-9	24	-16
+45	3	4
+-44	1	-3
+43	5	-20
+18	-8	-20
+-4	20	-6
+-1	21	23
+
+// de Araujo I E T, 2004: (CMC at 1000 cP - Tasteless Solution) and (Sucrose - 
+// Tasteless Solution) (Activations)
+// Subjects=12
+-36	12	6
+
+// de Araujo I E T, 2004: Vegetable Oil - Tasteless Solution (Activations)
+// Subjects=12
+-36	0	-1
+-36	18	4
+
+// de Araujo I E T, 2004: (CMC at 50 cP - Tasteless Solution) and (Vegetable 
+// Oil - Tasteless Solution) (Activations)
+// Subjects=12
+-38	2	-6
+-28	14	-6
+28	30	-10
+12	0	-4
+4	-8	50
+-6	40	10
+
+// de Araujo I E T, 2004: (Vegetable Oil - Tasteless Solution) and (Sucrose - 
+// Tasteless Solution) (Activations)
+// Subjects=12
+-10	48	-2
+
+// Smits M, 2007: (Lemon + Chocolate) vs. Sweetened Water
+// Subjects=7
+32	-28	18
+50	12	20
+-26	-14	30
+-62	2	6
+-58	-10	8
+58	-10	2
+52	-52	-16
+54	-44	-10
+54	-56	-4
+-18	-50	-8
+28	-84	18
+-12	-74	20
+
+// Smits M, 2007: Lemon vs. Sweetened Water
+// Subjects=7
+32	-28	18
+-56	0	26
+30	64	2
+40	-76	18
+46	-72	30
+56	-44	-10
+58	-10	4
+-54	-62	36
+46	-66	-8
+30	-84	6
+18	-80	40
+-18	-82	42
+40	-68	44
+48	-60	42
+
+// Smits M, 2007: Chocolate vs. Sweetened Water
+// Subjects=7
+50	12	20
+-14	-74	-6
+-16	-78	0
+-2	-86	6
+-6	-78	20
+
+// Kobayashi M, 2004: Gustatory Perception, Fruit Juice vs. No Gustatory 
+// Perception
+// Subjects=25
+6	10	56
+54	24	28
+32	20	-6
+56	10	8
+-64	-18	26
+36	20	0
+-56	-38	26
+-14	-58	-40
+6	-30	2
+14	12	-6
+
+// Kobayashi M, 2004: Gustatory Perception, Distilled Water vs. No Gustatory 
+// Perception
+// Subjects=25
+4	12	54
+40	56	12
+32	22	-6
+56	10	8
+-62	-16	24
+46	12	-2
+-54	-52	44
+34	-64	-42
+
+// O'Doherty J, 2001: Glucose - Tasteless 
+// Subjects=7
+38	40	-10
+47	38	-6
+-28	36	-7
+12	42	1
+45	9	17
+41	17	-7
+-27	17	-1
+-48	2	-3
+9	17	42
+50	5	-28
+32	14	27
+-32	12	33
+-19	5	54
+-24	6	15
+
+// O'Doherty J, 2001: Salt - Tasteless 
+// Subjects=7
+13	36	-8
+-18	39	-7
+45	30	10
+-32	32	3
+-45	-3	0
+15	21	42
+-16	39	24
+24	8	-22
+-33	16	25
+-44	30	31
+
+// Ogawa H, 2005: 1 M NaCl - Deionized Water, Normals
+// Subjects=11
+-52	26	4
+-60	-18	24
+-44	2	36
+46	-6	12
+-38	-8	12
+-48	-6	16
+46	-6	12
+-38	-8	12
+
+// Small D M, 2003: (IP + IUP) - (WP + WUP)
+// Subjects=9
+-30	-48	-30
+3	-45	-21
+-18	-57	-21
+-12	-27	-36
+-9	-39	-27
+9	-39	-36
+9	-48	-30
+9	-18	-21
+6	-27	-39
+15	-10	-15
+-12	-12	-12
+24	9	-12
+39	6	-6
+42	12	0
+51	6	-3
+-45	0	0
+-33	3	12
+-9	0	51
+
+// Small D M, 2003: IP - WP 
+// Subjects=9
+3	-54	-18
+6	-27	-39
+-12	-27	-33
+-24	-6	-21
+-12	-12	-21
+21	-15	18
+-45	9	6
+36	9	-3
+-39	-30	24
+3	-12	45
+15	15	33
+-6	-3	39
+-15	24	30
+-51	15	-21
+
+// Small D M, 2003: IUP - WUP 
+// Subjects=9
+-21	-57	-21
+-21	-66	-18
+-33	-54	-30
+3	-48	-12
+27	-45	-27
+18	-42	-30
+24	-51	-33
+3	-36	-36
+-9	-24	-36
+27	-9	-12
+-12	-12	-12
+-21	0	6
+-30	0	-6
+-21	12	0
+-42	27	0
+48	27	-12
+
+// Small D M, 2003: (IP + WP) - Tasteless Liquid
+// Subjects=9
+-27	12	-12
+27	9	-9
+27	15	-15
+-30	12	-3
+-33	3	-3
+0	-12	-12
+12	-27	6
+9	-24	9
+36	21	-21
+39	33	-18
+-33	33	-21
+-3	33	-6
+0	39	6
+3	42	-6
+
+// Small D M, 2003: IP - IUP 
+// Subjects=9
+-15	33	33
+-12	36	38
+39	33	-15
+
+// Small D M, 2003: IP - WUP 
+// Subjects=9
+12	-12	18
+39	33	-9
+
+// Small D M, 2003: WP - WUP 
+// Subjects=9
+27	9	-12
+39	31	-15
+
+// Small D M, 2003: (IUP +WUP) - Tasteless Liquid
+// Subjects=9
+-3	-27	-12
+-9	-9	-6
+0	-9	-12
+-30	3	9
+33	6	9
+-39	6	-6
+-54	9	9
+-48	12	0
+-45	18	-9
+45	-3	-12
+-39	27	-3
+39	15	-15
+-27	48	-18
+-30	42	-15
+6	54	21
+3	45	-3
+6	24	15
+-6	21	30
+-12	18	45
+-15	48	24
+9	39	36
+6	30	-9
+45	42	-6
+39	27	-9
+-48	36	-9
+-24	51	0
+
+// Small D M, 2003: IUP - IP 
+// Subjects=9
+-30	-51	-27
+36	-9	15
+-39	33	0
+54	21	-9
+
+// Small D M, 2003: WUP - WP 
+// Subjects=9
+42	0	21
+-18	-6	39
+15	6	38
+
+// Jabbi M, 2007: Unpleasant Taste - Neutral Taste + Disgusted Faces - Neutral 
+// Faces
+// Subjects=18
+52	18	-6
+-38	24	-10
+-44	30	0
+-14	12	2
+6	6	58
+
+// Jabbi M, 2007: Pleasant Taste - Neutral Taste + Pleasant Faces - Neutral 
+// Faces
+// Subjects=18
+-34	8	-14
+28	-18	42
+
+// McClure S M, 2004: Brand-Cued Coke vs. Light-Cued Coke
+// Subjects=16
+20	-20	-16
+-24	-24	-20
+-20	-32	-8
+-12	-20	-16
+20	28	48
+12	-8	4
+-4	-60	12
+
+// Plassmann H, 2008: Wine 1 High vs. Low Price, Sampling
+// Subjects=20
+-12	-90	-6
+30	30	24
+-6	0	39
+-12	36	-9
+15	-93	-3
+-42	-24	-6
+-18	42	6
+-24	30	-4
+
+// Plassmann H, 2008: Wine 1 High vs. Low Price, Swallowing
+// Subjects=20
+-4	-10	-9
+9	-60	-42
+9	-60	15
+4	27	-4
+21	42	54
+-2	27	-2
+3	-40	-33
+3	-27	-12
+9	-42	-1
+-6	-49	16
+
+// Plassmann H, 2008: Wine 1 Low vs. High Price, Sampling
+// Subjects=20
+57	18	3
+57	12	24
+54	12	45
+
+// Plassmann H, 2008: Wine 1 Low vs. High Price, Swallowing
+// Subjects=20
+57	16	3
+-43	50	3
+
+// Plassmann H, 2008: Wine 2 High vs. Low Price, Sampling
+// Subjects=20
+63	-9	-21
+-30	-24	-6
+-2	48	-20
+3	48	-19
+21	0	-18
+6	-57	24
+39	27	-21
+9	39	-9
+57	21	33
+9	54	-3
+-50	2	-27
+15	30	57
+
+// Plassmann H, 2008: Wine 2 High vs. Low Price, Swallowing
+// Subjects=20
+-54	3	-27
+3	33	-21
+9	51	-6
+3	-24	-21
+33	-18	-21
+9	-48	12
+
+// Plassmann H, 2008: Wine 2 Low vs. High Price, Sampling
+// Subjects=20
+-1	-45	-12
+-27	31	24
+24	33	30
+36	42	42
+
+// Plassmann H, 2008: Wine 2 Low vs. High Price, Swallowing
+// Subjects=20
+51	-27	6
+14	-22	38
+18	49	-9
+-48	25	0
+-51	-27	0
+52	26	0
+-9	3	43
+38	-23	19
+-60	-39	-3
+33	-66	0
+
+// Plassmann H, 2008: Wine 1 and 2 High vs. Low Price, Sampling
+// Subjects=20
+-4	43	-16
+4	33	-13
+
+// Plassmann H, 2008: Wine 1 and 2 High vs. Low Price, Swallowing
+// Subjects=20
+-6	-15	-12
+5	38	-9
+-3	45	-18
+4	-39	-38
+9	-51	15
+
+// Plassmann H, 2008: Wine vs. Neutral Solution, Tasting
+// Subjects=20
+-33	-93	-3
+
+// Plassmann H, 2008: Wine vs. Neutral Solution, Swallowing
+// Subjects=20
+-32	24	3
+32	24	3
+12	24	30
+5	24	48
+-3	24	47
+21	45	36
+-27	-51	-33
+24	45	15
+-6	12	6
+10	15	10
+
+// Plassmann H, 2008: 
+// Subjects=20
+-18	-84	0
+18	-84	-3
+33	30	21
+-27	-45	-33
+-27	54	30
+-54	3	-15
+-2	18	-17
+-18	5	57
+
+// Plassmann H, 2008: 
+// Low Price]
+// Subjects=20
+48	27	9
+
+// Kringelbach M L, 2003: (Chocolate Milk + Tomato Juice) > Neutral Solution
+// Subjects=10
+26	26	14
+16	38	-22
+2	30	-22
+16	20	36
+16	8	58
+
+// Grabenhorst F, 2010: Responses to Flavor (Vanilla and Strawberry) > 
+// Responses to Tasteless Control Stimuli
+// Subjects=14
+-40	44	28
+50	26	30
+44	18	34
+-8	6	48
+36	56	28
+-12	10	-6
+-34	56	20
+-46	18	40
+12	14	-2
+-16	4	14
+
+// Cowdrey F A, 2011: Chocolate in the Mouth: Recovered Anorexia Nervosa 
+// Subjects > Healthy Controls
+// Subjects=15
+12	8	0
+-20	2	8
+0	-36	20
+
+// Cowdrey F A, 2011: Chocolate in Mouth with Sight of Chocolate: Recovered 
+// Anorexia Nervosa > Healthy Controls 
+// Subjects=15
+14	10	-4
+
+// Cowdrey F A, 2011: Strawberry in Mouth - Rinse, Recovered Anorexia Nervosa 
+// Subjects > Healthy Controls
+// Subjects=15
+42	-14	4
+24	4	14
+
+// Cowdrey F A, 2011: Strawberry in Mouth with Sight of Strawberry: Recovered 
+// Anorexia Nervosa > Healthy Controls  
+// Subjects=15
+10	6	34
+42	-14	20
+14	12	12
+8	46	22
+
+// Cowdrey F A, 2011: Main Effect of Chocolate in the Mouth
+// Subjects=15
+-32	20	2
+36	18	2
+10	8	-4
+-2	34	20
+18	20	-14
+
+// Cowdrey F A, 2011: Main Effect of Strawberry in the Mouth
+// Subjects=15
+30	24	-2
+-32	20	8
+16	12	-2
+
+// McCabe C, 2007: MSG > Odor tl
+// Subjects=12
+34	24	-6
+46	22	28
+8	6	56
+
+// McCabe C, 2007: NaCl > Odor tl
+// Subjects=12
+-38	20	20
+
+// McCabe C, 2007: MSGV > Odor tl
+// Subjects=12
+-38	14	2
+-40	22	24
+10	6	54
+
+// McCabe C, 2007: NaClV > Odor tl
+// Subjects=12
+-40	12	0
+-2	8	54
+-42	42	8
+
