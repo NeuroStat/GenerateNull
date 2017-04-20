@@ -30,10 +30,13 @@
 home<-paste(getwd(),"/",sep="")
 setwd(home)
  
- namefoci <- "Gambling.txt"                              # Name of file
+ namefoci <- "EickhoffHBM09.txt"                              # Name of file
 
-  # Required number of null studies
-    k.null <- 500
+  # Required number of null studies is standard set to to 5k + 10. If you require
+  # more null studies set auto to "FALSE" and fill out number of required
+  # null studies
+    auto <- TRUE
+    k.null1 <- 375
 
 
 ###############################################################################
@@ -42,57 +45,38 @@ setwd(home)
   # Read in foci
     foci.info <- array(NA,dim=c(1,5))
     colnames(foci.info) <- c("X","Y","Z","N","S")
-    foci <- array(NA,dim=c(1,3))
-    foci.raw<-read.table(namefoci,fill=TRUE)
-    n <- NA
-    p <- NA
-    for(i in 1:50000){
-      S <- i
+    tempfoci <- array(NA,dim=c(1,3))
+    foci.raw<-read.table(namefoci,fill=TRUE,header=FALSE,stringsAsFactors = FALSE)
+    allfoci<-array(data=NA,dim=c(dim(foci.raw)[1],5))
+    nvect<-array(data=NA,dim=1000)
 
-      
-      for (j in 2:500) {
-        if((sum(grepl(foci.raw[j,1],c(0:9))) > 0) & (grepl(foci.raw[j-1,1],"//"))) {
-          l.n<-j
-          #print(c(j,l.n))
-        } else if((sum(grepl(foci.raw[j-1,1],c(-150:150))) > 0) & (is.na(grepl(foci.raw[j,1],"//")))) {
-          l.t<-j
-          #print(c(j,l.t))
-          break
-        } else if((sum(grepl(foci.raw[j-1,1],c(-150:150))) > 0) & (grepl(foci.raw[j,1],"//"))) {
-          l.t<-j
-          #print(c(j,l.t))
-          break
-        } else if(j==500) {
-         cat("Warning: more then 500 foci were found in 1 study")
+    j<-0
+    foci.raw2<-foci.raw[,1:3]
+    for (i in 1:dim(foci.raw2)[1]) {
+        if(foci.raw2[i,1]=="//" & (is.na(as.numeric(gsub("\\Subjects=", "", x=foci.raw2[i,2])))==FALSE)) {
+            j<-j+1
+            N<-as.numeric(gsub("\\Subjects=", "", x=foci.raw2[i,2]))                                            # Number of participants
+            nvect[j]<-N
         }
-      }
+        if(is.na(as.numeric(foci.raw2[i,2]))) next
 
-      N <- as.numeric(gsub("\\D", "", x=foci.raw[l.n-1,2]))
-      n <- cbind(n,N)
+        allfoci[i,5] <- j                                                                                       # Study number
+        allfoci[i,4] <- N
 
-      p <- cbind(p,l.t-l.n+1)
-
-      foci <- foci.raw[l.n:(l.t-1),1:3]
-      names(foci) <- c("X","Y","Z")
-      foci.info <- rbind(foci.info,cbind(foci,N,S))
-      foci.raw <- foci.raw[-(1:(l.t)),,]
-        
-      if(dim(foci.raw)[1]==0)
-      break
-      if(i==50000)
-      cat("Warning: more then 50000 studies were included in the meta-analysis")
+        allfoci[i,1:3]<-as.numeric(foci.raw2[i,1:3])                                                                                # next study
     }
 
-  # Final foci and info matrix
-    foci.info <- na.omit(foci.info)
+    allfoci<-na.omit(allfoci)
+    nvect<-nvect[1:max(allfoci[,5])]
+    foci.info <- allfoci[1:dim(allfoci)[1],1:dim(allfoci)[2]]
 
 
 # Parameters
-	n.r <- n[!is.na(n)] 			        # Sample sizes of individual studies
-	k.r <- max (foci.info[,5])				# Number of studies in the meta-analysis
-	p.r <- p[!is.na(p)]				        # Number of peaks
-  coord <- "MNI"                  # coordinate space
-	
+	n.r <- nvect 			                          # Sample sizes of individual studies
+	k.r <- max (foci.info[,5])				          # Number of studies in the meta-analysis
+	p.r <- as.vector(table(foci.info[,5]))			# Number of peaks
+  coord <- "MNI"                              # coordinate space
+	k.null <- ifelse(auto==TRUE,10 + (k.r*10), k.null1)
 
 # Generate new studies
   # Read in coordinates within mask
@@ -112,12 +96,16 @@ setwd(home)
   # Set up variables
     p.n <- sample(p.r,k.null,replace=TRUE)
 
+    seed <- sample(c(1:1000000),1)
+
     file<-array(data=NA,dim=c(sum(p.n)+(k.null*3),1))
     row<-1
     for (i in 1:k.null) {
       nfoci<-p.n[i]
       file[(row),1]<-paste("// NullStudy_",i,sep="")
+      set.seed(seed+i)
       file[(row+1),1]<-paste("// Subjects=",sample(n.r,1),sep="")
+      set.seed(seed+i)
       tempvox<-allvox[sample(dim(allvox)[1],nfoci,replace=FALSE),1:3]
       file[((row+2):(row+1+nfoci)),1]<-paste(tempvox[1:nfoci,1]," ",tempvox[1:nfoci,2]," ",tempvox[1:nfoci,3],sep="")
       file[(row+2+nfoci),1]<-paste(" ",sep="")
