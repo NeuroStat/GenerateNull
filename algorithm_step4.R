@@ -25,9 +25,9 @@
   # number of null studies that were added in the last step
   N <- 261
   # statistical significance of cluster in previous step, TRUE or FALSE
-  Significance <- TRUE
+  Significance <- FALSE
   # minimum number of null studies (this can be the predefined or observed minimum)
-  Min <- 146
+  Min <- 261
   # maximum number of null studies (this can be the predefined or observed maximum)
   Max <- 375
 
@@ -55,6 +55,8 @@ if(Significance==TRUE)
   Nmax<-Max
   Nmin<-N
 }
-cat("In a next step, add",Nnew,"null studies to the meta-analysis. Set your maximum value for the FSN equal to",Nmax, "and your minimum value to",Nmin,".")}
+cat("In a next step, add",Nnew,"null studies to the meta-analysis. Set your maximum value for the FSN equal to",Nmax, "and your minimum value to",Nmin,".")
+}
 
 nrnullstudies(N,Min,Max,Significance)
+

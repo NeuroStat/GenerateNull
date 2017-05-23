@@ -30,7 +30,7 @@
 home<-paste(getwd(),"/",sep="")
 setwd(home)
  
- namefoci <- "EickhoffHBM09.txt"                              # Name of file
+namefoci <- "EickhoffHBM09.txt"                              # Name of file
 
   # Required number of null studies is standard set to to 5k + 10. If you require
   # more null studies set auto to "FALSE" and fill out number of required
