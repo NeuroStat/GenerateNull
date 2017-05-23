@@ -35,8 +35,8 @@ setwd(home)
   # Required number of null studies is standard set to to 5k + 10. If you require
   # more null studies set auto to "FALSE" and fill out number of required
   # null studies
-    auto <- TRUE
-    k.null1 <- 375
+  auto <- TRUE
+  k.null1 <- 375
 
 
 ###############################################################################
