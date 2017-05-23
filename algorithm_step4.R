@@ -25,7 +25,7 @@
   # number of null studies that were added in the last step
   N <- 261
   # statistical significance of cluster in previous step, TRUE or FALSE
-  Significance <- FALSE
+  Significance <- TRUE
   # minimum number of null studies (this can be the predefined or observed minimum)
   Min <- 261
   # maximum number of null studies (this can be the predefined or observed maximum)
