@@ -79,18 +79,6 @@ namefoci <- "EickhoffHBM09.txt"                              # Name of file
 	k.null <- ifelse(auto==TRUE,10 + (k.r*10), k.null1)
 
 # Generate new studies
-  # Read in coordinates within mask
-    # allvox <- read.table("small_mask_vox_MNI.txt")
-    # MNI<-c(39,57,36) 
-    # toxyz<-function(x,origin) ((x-origin)*2)*c(-1,1,1)           # from R to ALE
-
-    # allvox.MNI<-array(data=NA,dim=c(dim(allvox)[1],3))
-    # for (i in 1:dim(allvox)[1]) {
-    #   allvox.MNI[i,]<-as.numeric(toxyz(allvox[i,1:3],MNI))
-    # }
-
-    # write.table(allvox.MNI,"within_MNI.txt",quote=FALSE,row.names=FALSE,col.names=FALSE)
-
     allvox <- read.table("within_MNI.txt")
 
   # Set up variables
