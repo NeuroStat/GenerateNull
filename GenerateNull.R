@@ -48,7 +48,6 @@ namefoci <- "EickhoffHBM09.txt"                              # Name of file
     tempfoci <- array(NA,dim=c(1,3))
     foci.raw<-read.table(namefoci,fill=TRUE,header=FALSE,stringsAsFactors = FALSE)
     allfoci<-array(data=NA,dim=c(dim(foci.raw)[1],5))
-    nvect<-array(data=NA,dim=1000)
 
     j<-0
     foci.raw2<-foci.raw[,1:3]
@@ -56,7 +55,6 @@ namefoci <- "EickhoffHBM09.txt"                              # Name of file
         if(foci.raw2[i,1]=="//" & (is.na(as.numeric(gsub("\\Subjects=", "", x=foci.raw2[i,2])))==FALSE)) {
             j<-j+1
             N<-as.numeric(gsub("\\Subjects=", "", x=foci.raw2[i,2]))                                            # Number of participants
-            nvect[j]<-N
         }
         if(is.na(as.numeric(foci.raw2[i,2]))) next
 
@@ -67,14 +65,14 @@ namefoci <- "EickhoffHBM09.txt"                              # Name of file
     }
 
     allfoci<-na.omit(allfoci)
-    nvect<-nvect[1:max(allfoci[,5])]
+    nvect<-allfoci[unique(allfoci[,5]),4]
     foci.info <- allfoci[1:dim(allfoci)[1],1:dim(allfoci)[2]]
 
 
 # Parameters
 	n.r <- nvect 			                          # Sample sizes of individual studies
 	k.r <- max (foci.info[,5])				          # Number of studies in the meta-analysis
-	p.r <- as.vector(table(foci.info[,5]))			# Number of peaks
+	p.r <- as.numeric(table(foci.info[,5]))			# Number of peaks
   coord <- "MNI"                              # coordinate space
 	k.null <- ifelse(auto==TRUE,10 + (k.r*10), k.null1)
 
