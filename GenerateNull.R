@@ -48,6 +48,7 @@ namefoci <- "EickhoffHBM09.txt"                              # Name of file
     tempfoci <- array(NA,dim=c(1,3))
     foci.raw<-read.table(namefoci,fill=TRUE,header=FALSE,stringsAsFactors = FALSE)
     allfoci<-array(data=NA,dim=c(dim(foci.raw)[1],5))
+    nvect <- vector()
 
     j<-0
     foci.raw2<-foci.raw[,1:3]
@@ -65,7 +66,7 @@ namefoci <- "EickhoffHBM09.txt"                              # Name of file
     }
 
     allfoci<-na.omit(allfoci)
-    nvect<-allfoci[unique(allfoci[,5]),4]
+    nvect<-c(nvect,N)
     foci.info <- allfoci[1:dim(allfoci)[1],1:dim(allfoci)[2]]
 
 
