@@ -62,12 +62,13 @@ space <- "MNI"                                               # Either MNI or MNI
 
         allfoci[i,5] <- j                                                                                       # Study number
         allfoci[i,4] <- N
+        
+        nvect<-c(nvect,N)
 
         allfoci[i,1:3]<-as.numeric(foci.raw2[i,1:3])                                                                                # next study
     }
 
     allfoci<-na.omit(allfoci)
-    nvect<-c(nvect,N)
     foci.info <- allfoci[1:dim(allfoci)[1],1:dim(allfoci)[2]]
 
 
