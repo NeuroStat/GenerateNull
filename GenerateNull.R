@@ -31,6 +31,7 @@ home<-paste(getwd(),"/",sep="")
 setwd(home)
  
 namefoci <- "EickhoffHBM09.txt"                              # Name of file
+space <- "MNI"                                               # Either MNI or MNI152
 
   # Required number of null studies is standard set to to 5k + 10. If you require
   # more null studies set auto to "FALSE" and fill out number of required
@@ -78,7 +79,13 @@ namefoci <- "EickhoffHBM09.txt"                              # Name of file
 	k.null <- ifelse(auto==TRUE,10 + (k.r*10), k.null1)
 
 # Generate new studies
-    allvox <- read.table("within_MNI.txt")
+    if (space == "MNI") {
+      allvox <- read.table("within_MNI.txt")
+    } else if (space == "MNI152") {
+      allvox <- read.table("within_MNI152.txt")
+    } else {
+      stop("Please choose either 'MNI' or 'MNI152' as template space!")
+    }
 
   # Set up variables
     p.n <- sample(p.r,k.null,replace=TRUE)
